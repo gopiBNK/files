@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
+    <title>Portfolio - Nuthalapati Gopi</title>
     <style>
         * {
             margin: 0;
@@ -16,6 +16,7 @@
             line-height: 1.6;
             background-color: #f0f0f0;
             padding: 20px;
+            color: #333;
         }
 
         section {
@@ -26,22 +27,22 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        h2 {
-            color: #333;
+        h2, h3 {
+            color: #007bff;
             margin-bottom: 10px;
         }
 
-        h3 {
-            color: #007bff;
-            margin-bottom: 5px;
-        }
-
-        p {
+        p, ul {
             color: #555;
             line-height: 1.8;
         }
 
-        .project {
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .project, .education-item {
             margin-bottom: 15px;
         }
 
@@ -56,13 +57,14 @@
         label {
             display: block;
             margin-bottom: 5px;
+            font-weight: bold;
         }
 
         input[type="text"],
         input[type="email"],
         textarea {
             width: 100%;
-            padding: 8px;
+            padding: 10px;
             margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 3px;
@@ -82,6 +84,7 @@
             cursor: pointer;
             border-radius: 3px;
             font-size: 16px;
+            transition: background-color 0.3s;
         }
 
         button[type="submit"]:hover {
@@ -92,12 +95,11 @@
             background-color: #333;
             padding: 10px 0;
             text-align: center;
+            margin-bottom: 20px;
         }
 
         nav ul {
             list-style-type: none;
-            margin: 0;
-            padding: 0;
         }
 
         nav ul li {
@@ -128,6 +130,7 @@
             height: 100px; 
             border-radius: 50%; 
             margin-bottom: 10px;
+            border: 2px solid #007bff;
         }
 
         .skills-list {
@@ -155,10 +158,11 @@
     <header>
         <div class="header-content">
             <img src="C:\Users\HP\Pictures\Screenshots\Screenshot (1).png" alt="Profile Picture" class="avatar">
-            <h1>NUTHALAPATI GOPI</h1>
+            <h1>Nuthalapati Gopi</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -172,25 +176,41 @@
     <section id="about">
         <h2>About Me</h2>
         <ul>
-            <li><strong>Name:</strong> NUTHALAPATI GOPI</li>
+            <li><strong>Name:</strong> Nuthalapati Gopi</li>
             <li><strong>Degree:</strong> B.Tech CSE</li>
             <li><strong>Hobbies:</strong> Playing, watching TV, studying</li>
             <li><strong>Goal:</strong> Software Engineer</li>
-            <li><strong>Father Name:</strong> Sunil Kumar</li>
-            <li><strong>Mother Name:</strong> Kavitha</li>
-            <li><strong>Brother Name:</strong> Aditya</li>
+            <li><strong>Father's Name:</strong> Sunil Kumar</li>
+            <li><strong>Mother's Name:</strong> Kavitha</li>
+            <li><strong>Brother's Name:</strong> Aditya</li>
             <li><strong>Mother Tongue:</strong> Telugu</li>
             <li><strong>Native Place:</strong> Tirupathi</li>
         </ul>
     </section>
 
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <h3>B.Tech in Computer Science Engineering</h3>
+            <p>Joined in 2022</p>
+        </div>
+        <div class="education-item">
+            <h3>Intermediate</h3>
+            <p>Studied from 2019 to 2021</p>
+        </div>
+        <div class="education-item">
+            <h3>10th Class</h3>
+            <p>Completed in 2020</p>
+        </div>
+    </section>
+
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project" id="project1">
+        <div class="project">
             <h3>Project 1: Portfolio Website</h3>
             <p>This project is a personal portfolio website showcasing my skills and projects.</p>
         </div>
-        <div class="project" id="project2">
+        <div class="project">
             <h3>Project 2: Bus Ticket Booking</h3>
             <p>This project allows users to book bus tickets with additional features.</p>
         </div>
