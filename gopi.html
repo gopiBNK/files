@@ -5,158 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
     <style>
-        
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f0f0f0;
-    padding: 20px;
-}
+        section {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
 
-section {
-    margin-bottom: 20px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+        h3 {
+            color: #007bff;
+            margin-bottom: 5px;
+        }
 
+        p {
+            color: #555;
+            line-height: 1.8;
+        }
 
-h2 {
-    color: #333;
-    margin-bottom: 10px;
-}
+        .project {
+            margin-bottom: 15px;
+        }
 
-h3 {
-    color: #007bff;
-    margin-bottom: 5px;
-}
+        form {
+            max-width: 400px;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
 
-p {
-    color: #555;
-    line-height: 1.8;
-}
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 14px;
+        }
 
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
 
-.project {
-    margin-bottom: 15px;
-}
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 16px;
+        }
 
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
 
-form {
-    max-width: 400px;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 14px;
-}
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
 
-textarea {
-    resize: vertical;
-    min-height: 100px;
-}
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
 
-button[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 3px;
-    font-size: 16px;
-}
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
 
-button[type="submit"]:hover {
-    background-color: #0056b3;
-}
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
 
+        .avatar {
+            width: 100px; 
+            height: 100px; 
+            border-radius: 50%; 
+            margin-bottom: 10px;
+        }
 
-nav {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
-}
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+        }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+        .skills-list li {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 3px;
+            font-size: 16px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 20px;
-}
-
-.avatar {
-    width: 60px; 
-    height: 60px; 
-    border-radius: 50%; 
-    margin-bottom: 10px;
-}
-
-
+        .skills-list li:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>NUTHALAPATI GOPI</h1>
+        <div class="header-content">
+            <img src="C:\Users\HP\Pictures\Screenshots\Screenshot (1).png" alt="Profile Picture" class="avatar">
+            <h1>NUTHALAPATI GOPI</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://github.com/gopiBNK" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/gopi-gopi-841440259/" target="_blank">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
 
     <section id="about">
         <h2>About Me</h2>
@@ -183,6 +194,17 @@ nav ul li a:hover {
             <h3>Project 2: Bus Ticket Booking</h3>
             <p>This project allows users to book bus tickets with additional features.</p>
         </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>C</li>
+            <li>C++</li>
+            <li>Frontend Development</li>
+            <li>Python</li>
+            <li>DBMS</li>
+        </ul>
     </section>
 
     <section id="contact">
